@@ -1,0 +1,295 @@
+
+.kobashiki-trouble {
+  background-image: url("../images/kobatore_pc.png");
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: 100% 100%;
+  padding-top: 150px;
+  padding-bottom: 190px;
+  transform: translateY(80px);
+}
+.kobashiki__explanation{
+  text-align: center;
+}
+
+.kobashiki__second-title{
+  text-align: center;
+  font-size: 3.6rem;
+  font-family: "Kaisei HarunoUmi", serif;
+  margin-top: 180px;
+  margin-bottom: 100px;
+}
+.kobashiki__shirokuma-inner{
+  text-align: center;
+}
+.kobashiki__shirokuma-inner p{
+  text-align: left;
+  background-image: url("../images/bg_bluepc_01.png");
+  border-radius: 25px;
+  padding: 40px 17.0%;
+  line-height: 2.5em;
+  font-size: 1.8rem;
+}
+.kobashiki__shirokuma-inner img{
+  width: 180px;
+}
+
+.kobashiki__shirokuma-position{
+  position: relative;
+}
+.shirokuma-up{
+  transform: translateY(0px);
+  margin-bottom: -45px;
+  z-index: 90;
+}
+.border-bottom{
+  background: linear-gradient(transparent 50%, #70b3c9 50%);
+  padding-bottom: 5px;
+}
+@media (max-width: 1315px) {
+  .kobashiki__shirokuma-inner p br {
+    display: none;
+  }
+  .kobashiki__shirokuma-inner p {
+    text-align: justify;
+    text-justify: inter-ideograph;
+  }
+}
+
+.kobashiki-inner{
+  margin-top: 170px;
+}
+.kobashiki__method{
+  text-align: center;
+}
+.kobashiki__method h3{
+  color: #333;
+  font-size: 3.6rem;
+  font-family: "Kaisei HarunoUmi", serif;
+}
+.kobashiki__method p{
+  color: #333;
+  margin-top: 40px;
+  margin-bottom: 60px;
+}
+
+.kobashiki__marukuma-grid{
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  margin-bottom: 90px;
+  width: 105.5%;
+}
+.kobashiki__list{
+  color: #333;
+  font-size: 2.4rem;
+  font-family: "Kaisei HarunoUmi", serif;
+  background-image: url(../images/bg_bluepc_01.png);
+  border-radius: 25px;
+  display: inline-block;
+  width: 100%;
+}
+.kobashiki__list dl{
+  align-items: center;
+  display: flex;
+  margin-bottom: 20px;
+  margin-left: 90px;
+}
+.mgr-10{
+  margin-right: 20px;
+}
+.mgr-20{
+  margin-right: 40px;
+}
+.kobashiki__list dl:nth-child(1){
+  margin-top: 50px;
+}
+.kobashiki__list dl:nth-child(4){
+  margin-bottom: 50px;
+}
+.kobashiki__list dl img{
+  width: 25px;
+  height: auto;
+  margin-right: 20px;
+  
+}
+.kobashiki__list dl dt{
+  display: flex;
+  align-items: center;
+}
+.marukuma{
+  width: 25%;
+  height: 100%;
+  transform: translate(-70px, 50px);
+}
+.marukuma2{
+  width: 1320px;
+  transform: translate(-0px, 50px);
+}
+
+.br-pc {
+  display: block;
+}
+.br-sp {
+  display: none;
+}
+.br-sp_2{
+  display: none;
+}
+
+@media (max-width: 1115px) {
+  .kobashiki__list dl{
+    align-items: center;
+    display: flex;
+    margin-bottom: 20px;
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+  .kobashiki__list dl{
+    margin-left: 40px;
+  }
+  .marukuma{
+    transform: translate(-50px, 100px);
+  }
+}
+@media (max-width: 1000px){
+  .kobashiki__list dl {
+      display: grid;
+      margin: 15px 20px;
+    }
+    .kobashiki__list dl dd {
+      margin-left: 43px;
+    }
+
+    .marukuma{
+      width: 25%;
+      transform: translate(-50px, 250px);
+    }
+    .kobashiki__list {
+      min-width: 600px;
+  }
+}
+
+@media (max-width: 768px) {
+  .kobashiki-trouble {
+    background-image: url("../images/kobatore_tb.png");
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: 100% 100%;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    transform: translateY(50px);
+  }
+  .kobashiki-title-sp{
+    font-size: 2.4rem;
+  }
+  .kobashiki__explanation{
+    text-align: center;
+    font-size: 1.4rem;
+  }
+  .kobashiki__second-title{
+    font-size: 2.4rem;
+    margin-top: 100px;
+    margin-bottom: 60px;
+  }
+  .kobashiki__shirokuma-inner{
+    text-align: center;
+  }
+  .kobashiki__shirokuma-inner p{
+    margin: 0 10px;
+    padding: 50px 20px;
+    font-size: 1.4rem;
+    margin-bottom: 20px;
+  }
+  .kobashiki__shirokuma-inner img{
+    width: 140px;
+  }
+  .kobashiki-inner{
+    margin-top: 100px;
+  }
+  .kobashiki__method h3{
+    font-size: 2.4rem;
+  }
+  .kobashiki__method p{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    font-size: 1.4rem;
+  }
+  .kobashiki__marukuma-grid{
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    margin-bottom: 86px;
+    width: 100%;
+    height: 350px;
+  }
+  .kobashiki__list{
+    color: #333;
+    font-size: 1.5rem;
+    font-family: "Kaisei HarunoUmi", serif;
+    background-image: url(../images/bg_bluepc_01.png);
+    border-radius: 25px;
+    display: block;
+    width: 100%;
+    min-width: 0px;
+  }
+  .kobashiki__list dl{
+    display: grid;
+    margin: 15px 20px; 
+  }
+  .kobashiki__list dl:nth-child(1){
+    margin-top: 25px;
+  }
+  .kobashiki__list dl:nth-child(4){
+    margin-bottom: 25px;
+  }
+  .kobashiki__list dl img{
+    width: 19px;
+    height: auto;
+    margin-right: 10px;
+  }
+  .kobashiki__list dl dd{
+    margin-left: 28px;
+  }
+  .kobashiki__list dl dt{
+    font-size: 1.6rem;
+  }
+  .marukuma{
+    width: 30%;
+    height: auto;
+    transform: translate(5px, -145px);
+    min-width: 130px;
+  }
+
+  .br-pc {
+    display: none;
+  }
+  .br-sp {
+    display: block;
+  }
+}
+
+@media (max-width: 550px) {
+  .marukuma{
+    width: 30%;
+    height: auto;
+    transform: translate(5px, -95px);
+    min-width: 115px;
+  }
+  .kobashiki__marukuma-grid {
+
+    height: 380px;
+  }
+  .br-sp_2{
+    display: block;
+  }
+  @media (max-width: 480px){
+    .kobashiki-trouble {
+      background-image: url("../images/kobatore_sp.png");
+      padding-top: 70px;
+      padding-bottom: 95px;
+      transform: translateY(48px);
+    }
+  }
+}
+
+

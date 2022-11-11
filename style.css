@@ -1,0 +1,521 @@
+html {
+  font-size: 62.5%;
+  width: 100%;
+}
+body {
+  color: #333;
+  font-family: dnp-shuei-mgothic-std, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: clamp(1.4rem, 1vw + 1rem, 1.6rem);
+  line-height: 1.8;
+}
+a {
+  color: #443a36;
+}
+img {
+  width: 100%;
+}
+.none {
+  display: none;
+}
+.section-inner,
+.footer__container {
+  width: 90%;
+  max-width: 1190px;
+  margin: 0 auto;
+}
+.br-sp,
+.br-sp-s {
+  display: none;
+}
+.section-title {
+  font-size: clamp(2.4rem, 2vw + 1rem, 4rem);
+  text-align: center;
+  margin-bottom: 70px;
+  font-family: "Kaisei HarunoUmi", serif;
+}
+/* button */
+.section-btn {
+  margin: 0 auto;
+  text-align: center;
+  width: 300px;
+  padding: 28px 0;
+  border-radius: 10px;
+  font-size: clamp(1.6rem, 2vw + 1rem, 2rem);
+  background: #689eb6;
+  line-height: 1;
+}
+.section-btn a {
+  display: inline-block;
+  position: relative;
+  padding-right: 32px;
+  color: #fff;
+}
+.section-btn a::before,
+.section-btn a::after {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+  content: "";
+}
+.section-btn a::before {
+  width: 20px;
+  height: 20px;
+  border: 1px solid #fff;
+  border-radius: 50%;
+}
+.section-btn a::after {
+  right: 9px;
+  width: 5.5px;
+  height: 5.5px;
+  border-top: 1px solid #fff;
+  border-right: 1px solid #fff;
+  transform: rotate(45deg);
+}
+/* header */
+header {
+  background-image: url(images/header-back.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: fixed;
+  z-index: 999;
+  width: 100%;
+  height: 140px;
+}
+.header-nav {
+  display: flex;
+  height: 80px;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
+  max-width: 1190px;
+  padding: 0 4vw;
+}
+.header-nav li {
+  position: relative;
+}
+.header-nav li:not(.header-logo)::after {
+  content: "";
+  background-image: url(images/nav-hover.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: block;
+  margin: 0 auto;
+  width: 22px;
+  height: 14px;
+  opacity: 0;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.header-nav li:not(.header-logo):hover::after {
+  opacity: 1;
+}
+.header-logo {
+  width: 82px;
+  margin-left: 0.6%;
+  padding-top: 66px;
+  z-index: 9999;
+}
+.header__sns-link {
+  display: none;
+}
+/* trouble */
+.section-trouble__background {
+  background-image: url("images/mokomoko_01.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  padding-top: 9.236%;
+  transform: translateY(1px);
+}
+.section-trouble {
+  background-image: url("images/mokomoko_02.png");
+  background-repeat: repeat-y;
+  background-position: top;
+  background-size: 100%;
+  padding-top: 100px;
+}
+.section-trouble__list {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 124px;
+  margin: 0 auto 78px;
+  font-family: "Kaisei HarunoUmi", serif;
+}
+.section-trouble__list li {
+  width: calc(100% / 3);
+  font-size: clamp(2.4rem, 2vw + 1rem, 3rem);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.section-trouble__list li::before {
+  content: "";
+  background-image: url(images/check.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: inline-block;
+  width: 75px;
+  height: 63px;
+  margin-right: 4px;
+}
+.section-trouble .section-btn {
+  margin-bottom: 100px;
+}
+/* footer */
+.footer__background {
+  background-image: url(images/footer-back_01.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  padding-top: 15%;
+  transform: translateY(2px);
+}
+footer {
+  background-image: url(images/footer-back_02.png);
+  background-size: cover;
+  padding: 100px 0;
+}
+.footer__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer__container h2 {
+  font-size: clamp(3rem, 2vw + 1rem, 5rem);
+  display: flex;
+  align-items: center;
+  margin-bottom: 44px;
+}
+.footer__container h2::before {
+  content: "";
+  background-image: url(images/logo.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: inline-block;
+  width: 146px;
+  height: 146px;
+}
+.footer__container iframe {
+  width: 36.805vw;
+  height: 28.472vw;
+  border-radius: 25px;
+}
+.footer__text {
+  font-size: clamp(1.6rem, 2vw + 1rem, 2.4rem);
+}
+.footer__text dl {
+  display: flex;
+  margin-bottom: 32px;
+}
+.footer__text dt {
+  width: 25.769%;
+}
+.footer__text address {
+  font-style: normal;
+  margin-bottom: 40px;
+}
+.footer__text address span {
+  padding-right: 26px;
+}
+.footer__sns-link {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.footer__sns-link p {
+  color: #fff;
+  padding-left: 40px;
+  font-family: "Kaisei HarunoUmi", serif;
+}
+.footer__sns-link ul {
+  display: flex;
+  gap: 20px;
+}
+.footer__sns-link li img {
+  width: 80px;
+  height: 80px;
+}
+@media (max-width: 768px) {
+  .sp-none {
+    display: none;
+  }
+  .br-sp {
+    display: block;
+  }
+  header {
+    height: 87px;
+  }
+  .section-trouble .section-btn {
+    margin-bottom: 86px;
+  }
+  .section-trouble__background {
+    background-image: url("images/mokomoko_sp_01.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    padding-top: 9.236%;
+    transform: translateY(1px);
+  }
+  .section-trouble {
+    background-image: url("images/mokomoko_sp_02.png");
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: 100%;
+  }
+  .section-trouble__list {
+    row-gap: 64px;
+  }
+  .section-trouble__list li {
+    width: calc(100% / 2);
+  }
+  .section-trouble__list li::before {
+    width: 20.833%;
+    height: 4vh;
+  }
+  .footer__background {
+    background-image: url(images/footer_sp_01.png);
+    padding-top: 29.6%;
+  }
+  footer {
+    background-image: url(images/footer_sp_02.png);
+    padding: 50px 0 140px;
+  }
+  .footer__container {
+    gap: 50px;
+    flex-direction: column;
+  }
+  .footer__container iframe {
+    width: 100%;
+    height: 96vw;
+  }
+  .footer__information {
+    width: 100%;
+    max-width: 460px;
+  }
+  .footer__container h2 {
+    margin-bottom: 20px;
+  }
+  .footer__container h2::before {
+    width: 23.733%;
+    height: 10vh;
+  }
+  .footer__text dl {
+    margin-bottom: 10px;
+  }
+  .footer__sns-link {
+    flex-direction: column-reverse;
+  }
+  .footer__sns-link p {
+    padding-left: 0;
+  }
+  .footer__sns-link ul {
+    gap: 40px;
+  }
+  .footer__sns-link li img {
+    width: 50px;
+    height: 50px;
+  }
+  /* ハンバーガーメニュー */
+  .menu-btn {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    margin: 0 0 0 auto;
+    z-index: 9999;
+  }
+  .menu-btn span {
+    display: inline-block;
+    transition: all 0.4s;
+    position: absolute;
+    left: 13px;
+    height: 2px;
+    background-color: #707070;
+  }
+  .menu-btn span:nth-of-type(1) {
+    top: 22px;
+    width: 50%;
+  }
+  .menu-btn span:nth-of-type(2) {
+    top: 29px;
+    width: 40%;
+  }
+  .menu-btn.active span:nth-of-type(1) {
+    top: 20px;
+    left: 16px;
+    transform: translateY(6px) rotate(-45deg);
+    width: 35%;
+  }
+  .menu-btn.active span:nth-of-type(2) {
+    top: 32px;
+    left: 16px;
+    transform: translateY(-6px) rotate(45deg);
+    width: 35%;
+  }
+  #g-nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+  }
+  #g-nav .header-nav li:not(.header-logo):before {
+    content: "";
+    background-image: url(images/nav-hover.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: inline-block;
+    margin: 0 auto;
+    width: 22px;
+    height: 14px;
+    margin-right: 10px;
+  }
+  .header-nav li:not(.header-logo) {
+    display: none;
+  }
+  .header-nav {
+    height: auto;
+    align-items: normal;
+  }
+  #g-nav.panelactive .header-nav {
+    flex-direction: column;
+  }
+  .header-nav .header-logo {
+    width: 57px;
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-left: 0;
+    padding-top: 0;
+  }
+  #g-nav.panelactive {
+    height: 100vh;
+    background-image: url(images/menu_sp.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  #g-nav.panelactive {
+    flex-direction: column;
+  }
+  #g-nav.panelactive .header-nav li:not(.header-logo) {
+    display: block;
+  }
+  #g-nav.panelactive .header-nav li:first-of-type {
+    margin-top: 20.085vh;
+  }
+  #g-nav.panelactive .header-nav li:not(:last-of-type) {
+    margin-bottom: 6vh;
+  }
+  .header__sns-link {
+    display: flex;
+    gap: 52px;
+    position: absolute;
+    bottom: 5vh;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .header__sns-link li {
+    width: 50px;
+    height: 50px;
+  }
+  .cv-btn ul {
+    width: 92%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    position: fixed;
+    bottom: 10px;
+    left: 0;
+    right: 0;
+    margin: auto;
+  }
+  .reserve-btn {
+    width: 29.565%;
+    max-width: 150px;
+    object-fit: contain;
+  }
+  .top-btn {
+    text-align: center;
+    width: 11.632vw;
+    min-width: 72px;
+  }
+  .top-btn img,
+  .top-btn span {
+    display: block;
+  }
+  .top-btn img {
+    object-fit: contain;
+  }
+}
+@media not screen and (min-width: 375px) {
+  .footer__text dt {
+    width: 35%;
+  }
+  .br-sp-s {
+    display: block;
+  }
+}
+/* Q.Aマーク */
+.faq {
+  padding: 100px 0;
+}
+.question,
+.answer {
+  position: relative;
+  display: flex;
+  align-items: center;
+  font-size: 3.6rem;
+}
+.question {
+  font-family: "Kaisei HarunoUmi", serif;
+  font-size: 3.6rem;
+  margin-bottom: 42px;
+}
+.answer {
+  font-size: 2.4rem;
+}
+.question::before,
+.answer::before,
+.question::after,
+.answer::after {
+  font-family: "Kaisei HarunoUmi", serif;
+  color: #fff;
+  margin-right: 32px;
+}
+.question::before,
+.answer::before {
+  display: inline-block;
+  width: 65px;
+  height: 65px;
+  border-radius: 50%;
+}
+.question::before {
+  content: "";
+  background-color: #4a5c8a;
+}
+.answer::before {
+  content: "";
+  background-color: #689eb6;
+}
+.question::after,
+.answer::after {
+  font-family: "Kaisei HarunoUmi", serif;
+  color: #fff;
+  font-size: 3.6rem;
+  line-height: 1;
+  position: absolute;
+  transform: translateY(-2px);
+}
+.question::after {
+  content: "Q.";
+  left: 15px;
+}
+.answer::after {
+  content: "A.";
+  left: 16.5px;
+}

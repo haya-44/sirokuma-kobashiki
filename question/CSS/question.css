@@ -1,0 +1,220 @@
+.haikeikuma{
+  background-image: url("../images/haikeikuma.png");
+}
+.question-trouble {
+  background: url("../images/mokomoko_02.png")no-repeat right/60px;
+  background-repeat: repeat-y;
+  background-position: top;
+  background-size: 100% 100%;
+  padding-top: 200px;
+}
+.br-pc-none{
+  display: none;
+}
+.mt_S{
+  transform: translateY(0);
+  background: url("../images/haikeikuma-kai.png") no-repeat right/870px;
+  padding-top: 50px;
+}
+.question__sub-title{
+  display: flex;
+  column-gap: 40px;
+  justify-content: center;
+  margin: 0 auto;
+}
+.question__sub-title p{
+  text-align: center;
+  order: 2;
+}
+.tree-image-1{
+  width: 70px;
+  order: 1;
+}
+.tree-image-2{
+  width: 70px;
+  transform: scale(-1, 1);
+  order: 3;
+}
+.mountain-align{
+  text-align: center;
+}
+.mountain-image{
+  width: 270px;
+}
+.accordion {
+  width: 100%;
+}
+.accordion-hidden {
+  display: none;
+}
+.accordion-open {
+  display: block;
+  margin: 40px 0 30px 0;
+  cursor: pointer;
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+  font-size: 3.6rem;
+  font-family: "Kaisei HarunoUmi", serif;
+  color: #555555;
+}
+.q-icon {
+  background: #4A5C8A;
+  width: 45px;
+  height: 45px;
+  border-radius: 30px;
+  text-align: center;
+  font-size: 2.8rem;
+  color: #fff;
+  margin-right: 20px;
+}
+.a-icon{
+  background: #689EB6;
+  width: 45px;
+  height: 45px;
+  border-radius: 30px;
+  text-align: center;
+  font-size: 2.8rem;
+  color: #fff;
+  font-family: "Kaisei HarunoUmi", serif;
+  margin-right: 20px;
+}
+.accordion-open span:nth-child(2){
+  font-size: 3.6rem;
+}
+.accordion-box p:nth-child(2){
+  font-size: 2.4rem;
+}
+.accordion-open::before, .accordion-open::after {
+  content: '';
+  width: 20px;
+  height: 1px;
+  background: #555;
+  position: absolute;
+  top: 50%;
+  right: 5%;
+  transform: translateY(-50%);
+}
+.accordion-open::after {
+  transform: translateY(-50%) rotate(90deg);
+  transition: .7s;
+}
+.accordion-hidden:checked+.accordion-open:after {
+  transform: translateY(-50%) rotate(0);
+}
+.accordion-inner {
+  display: block;
+  height: 0;
+  overflow: hidden;
+  padding: 0;
+  opacity: 0;
+  transition: 0.5s;
+  cursor: pointer;
+}
+.accordion-hidden:checked+.accordion-open+.accordion-inner {
+  height: auto;
+  opacity: 1;
+}
+.accordion_qa .accordion-open {
+  padding-left: 2.5em;
+}
+.accordion_qa .accordion-hidden:checked+.accordion-open+.accordion-inner {
+  height: auto;
+  opacity: 1;
+  padding: 10px 10px 10px 2.5em;
+}
+.accordion-box {
+  display: block;
+  height: 0;
+  padding: 0;
+  opacity: 0;
+  transition: 1s;
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+  font-size: 2.4rem;
+  font-family: dnp-shuei-mgothic-std, sans-serif;
+  color: #555555;
+}
+.accordion-hidden:checked+.accordion-open+.accordion-box {
+  opacity: 1;
+  padding-top: 30px;
+  padding-bottom: 100px;
+}
+.accordion-open br{
+  display: none;
+}
+.accordion-box br {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .question-trouble {
+    padding-top: 150px;
+  }
+  .mt_S{
+    background: url(../images/haikeikuma-kai.png) no-repeat center/670px;
+  }
+  .accordion-hidden:checked+.accordion-open+.accordion-box {
+    padding-bottom: 20px;
+  }
+  .q-icon{
+    background: #4A5C8A;
+    width: 30px;
+    height: 30px;
+    border-radius: 30px;
+    text-align: center;
+    font-size: 1.8rem;
+    color: #fff;
+    margin-right: 10px;
+  }
+  .a-icon{
+    background: #689EB6;
+    width: 30px;
+    height: 30px;
+    border-radius: 30px;
+    text-align: center;
+    font-size: 1.8rem;
+    color: #fff;
+    font-family: "Kaisei HarunoUmi", serif;
+    margin-right: 10px;
+    min-width: 30px;
+  }
+  .accordion-open span:nth-child(2){
+    font-size: 1.8rem;
+  }
+  .accordion-box p:nth-child(2){
+    font-size: 1.4rem;
+  }
+}
+@media (max-width: 480px) {
+  .question__sub-title {
+    display: block;
+    column-gap: 40px;
+    justify-content: center;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .mountain-image {
+    width: 195px;
+    margin-top: 60px;
+  }
+  .tree-image-1 {
+    margin-right: 60px;
+  }
+  .tree-image-2 {
+    margin-left: 60px;
+  }
+  .accordion-open::before, .accordion-open::after {
+    width: 10px;
+    height: 1px;
+  }
+  .accordion-open br{
+    display: block;
+  }
+  .accordion-box br {
+    display: block;
+  }
+}
+

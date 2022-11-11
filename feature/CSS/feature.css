@@ -1,0 +1,196 @@
+
+.tokucho-bg {
+  background-image: url("../images/tokucho_pc.png");
+  background-repeat: no-repeat;
+    background-size: 100% 100%;
+    padding-top: 14%;
+    padding-bottom: 30%;
+    transform: translateY(83px);
+    text-align: center;
+}
+.tokucho-bg h2{
+  font-size: 4.0rem;
+  text-align: center;
+  margin-bottom: 30px;
+  font-family: "Kaisei HarunoUmi", serif;
+}
+.tokucho-inner{
+  width: 90%;
+  max-width: 1190px;
+  margin: 0 auto;
+}
+.tokucho-inner h2{
+  text-align: center;
+  font-size: 4.0rem;
+  font-family: "Kaisei HarunoUmi", serif;
+  margin-bottom: 60px;
+}
+.tokucho-flex{
+  display: flex;
+  column-gap: 50px;
+  justify-content: center;
+  margin-bottom: 200px;
+}
+.feature-imagebox{
+  width: calc(100%/3);
+}
+
+.feature-imagebox img{
+  height: auto;
+  border-radius: 25px;
+  min-width: 200px;
+}
+.feature-imagebox h3{
+  margin: 5px 0;
+  font-size: 2.4rem;
+  font-family: "Kaisei HarunoUmi", serif;
+}
+.feature-imagebox p{
+  font-size: 1.6rem;
+}
+
+.pc-none{
+  display: none;
+}
+
+.br-pc {
+  display: block;
+}
+.br-sp {
+  display: none;
+}
+
+
+@media (max-width: 1024px){
+  .tokucho-flex{
+    display: flex;
+    column-gap: 50px;
+    justify-content: center;
+    margin-top: 80px;
+    margin-bottom: 90px;
+  }
+  .feature-imagebox{
+    width: calc(100%/3);
+  }
+
+  .feature-imagebox h3{
+    font-size: 2.4rem;
+  }
+  .feature-imagebox p{
+    font-size: 1.6rem;
+    margin-bottom: 20px;
+  }
+}
+  @media (max-width: 768px) {
+
+    .tokucho-inner h2{
+      font-size: 2.4rem;
+      margin-top: 100px;
+    }
+    .tokucho-bg {
+      padding-top: 14%;
+      padding-bottom:230px;
+      transform: translateY(52px);
+    }
+    .tokucho-bg h2{
+      font-size: 2.4rem;
+      text-align: center;
+      margin-top: 0px;
+      margin-bottom: 40px;
+      font-family: "Kaisei HarunoUmi", serif;
+    }
+    .tokucho-bg p{
+      font-size: 1.4rem;
+    }
+    .tokucho-flex{
+      display: block;
+      column-gap: 0px;
+      justify-content: center;
+      margin-top: 80px;
+      margin-bottom: 90px;
+    }
+    .feature-imagebox{
+      width: calc(100%/1);
+    }
+    .feature-imagebox img{
+      height: auto;
+      border-radius: 25px;
+      min-width: 350px;
+    }
+    .feature-imagebox h3{
+      font-size: 2.4rem;
+    }
+    .feature-imagebox p{
+      font-size: 1.4rem;
+    }
+  }
+  @media (max-width: 480px) {
+    .tokucho-bg {
+      background-image: url("../images/tokucho_sp.png");
+      padding-top: 70px;
+      padding-bottom: 20px;
+      transform: translateY(50px);
+    }
+    .tokucho-subtitle{
+      margin-top: 0px;
+    }
+    .tokucho-bg p{
+      font-size: 1.4rem;
+    }
+    .tokucho-inner{
+      margin-bottom: 70px;
+    }
+    .tokucho-flex{
+      display: block;
+      column-gap: 0px;
+      justify-content: center;
+      margin-top: 80px;
+      margin-bottom: 90px;
+    }
+    .feature-imagebox{
+      width: calc(100%/1);
+    }
+    .feature-imagebox img{
+      height: auto;
+      border-radius: 25px;
+      min-width: 300px;
+    }
+    .feature-imagebox h3{
+      font-size: 1.8rem;
+    }
+    .feature-three-sp{
+      text-align: center;
+    }
+    .feature-three-bg-sp{
+      background-image: url("../images/bg_bluepc_01.png");
+      border-radius: 25px;
+      width: 80%;
+      padding: 20px 35px;
+      text-align: left;
+      margin: 0 auto;
+      text-align: center;
+    }
+    .feature-three-sp h2{
+      margin-top: 130px;
+    }
+    .feature-three-bg-sp ul li a{
+      display: flex;
+      align-items: center;
+      width: calc(100%/1);
+      column-gap: 20px;
+      margin-bottom: 5px;
+      margin-top: 5px;
+      font-family: "Kaisei HarunoUmi", serif;
+    }
+    .feature-three-bg-sp ul li img{
+      width: 20px;
+      height: auto;
+    }
+    .br-pc {
+      display: none;
+    }
+    .br-sp {
+      display: block;
+    }
+  }
+
